@@ -41,3 +41,8 @@ char *cmark_markdown_to_html(const char *text, size_t len, int options) {
 
   return result;
 }
+
+void cmark_markdown_to_html_free(char* buf) {
+  if (buf)
+    free(buf);
+}

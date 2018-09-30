@@ -27,6 +27,12 @@ extern "C" {
 CMARK_EXPORT
 char *cmark_markdown_to_html(const char *text, size_t len, int options);
 
+/** Free the buffer returned from cmark_markdown_to_html
+ */
+CMARK_EXPORT
+void cmark_markdown_to_html_free(char* buf);
+
+
 /** ## Node Structure
  */
 
